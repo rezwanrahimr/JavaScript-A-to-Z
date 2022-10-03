@@ -5,7 +5,19 @@
 var letter = prompt("Enter the Letter : ");
 letter = letter.toLowerCase();
 switch(letter){
-    case "a" || "e" || "i" || "o" || "u" :
+    case "a" :
+        console.log("Vowel");
+        break;
+    case "e" :
+        console.log("Vowel");
+        break;
+    case "i" :
+        console.log("Vowel");
+        break;
+    case "o" :
+        console.log("Vowel");
+        break;
+    case "u" :
         console.log("Vowel");
         break;
     default :
