@@ -5,7 +5,7 @@ var marks = prompt("Enter your marks : ");
 
 if(marks > 80 && marks < 100){
     document.write("A +");
-    console.log(marks);
+   
 }
 else if(marks > 70 && marks < 79){
     document.write("A");
@@ -27,4 +27,20 @@ else if(marks < 33){
 }
 else{
         alert("Enter vaild marks");
+}
+
+
+// Comparision 3 numbers.
+var numberOne = prompt("enter first number: ");
+var numberTwo = prompt("enter second number: ");
+var numberThree = prompt("enter thard number: ");
+if(numberOne > numberTwo && numberOne > numberThree){
+    document.write("Number One is Bigger" + numberOne);
+
+}
+else if(numberTwo > numberOne && numberTwo > numberThree){
+    document.write("Number Two is Bigger" + numberTwo);
+}
+else{
+    document.write("Number Three is Bigger: " + numberThree)
 }
