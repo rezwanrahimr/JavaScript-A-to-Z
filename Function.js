@@ -11,3 +11,9 @@ var demon = function(a,b){
 
 var result = demon(2,2);
 console.log(result);
+
+
+// IIFE (Immediately Invoked Function Expression)
+(function IIFE(){
+    console.log('Hello IIFE');
+})();
