@@ -16,3 +16,13 @@ for(var i = 2; i<=100; i=i+2){
 for(var i= 99; i>=1; i--){
     console.log(i);
 }
+
+
+// Task 6.
+var sum = 0;
+for(var i = 0; i <= 100; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        sum = sum + i;
+    }
+}
+console.log('result : ' , i);
