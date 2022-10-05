@@ -8,8 +8,12 @@ There are five type of oparator in javaScript.
 5. ternary oparator . ? :
 */
 
-var numberOne = prompt("Enter First Number !");
+/* var numberOne = prompt("Enter First Number !");
 var numberTwo = prompt("Enter Second Number !");
 var numberThree = prompt("Enter Thard Number !");
 
 var comparision = numberOne > numberTwo && numberOne > numberThree ? console.log('Number One is Bigger : ' , numberOne)  :   numberTwo > numberOne && numberTwo > numberThree ? console.log('Number Two is Bigger', numberTwo) : console.log('Number Three is Bigger',numberThree);
+ */
+
+var input = prompt("Enter Your Name : ");
+var progress = input === "rezwan" ? console.log("Hey Rezwan How are you !") : input === "rahim" ? console.log("Hey rahim ! how are you !") : console.log("NOthing ");
