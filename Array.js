@@ -17,7 +17,7 @@
 // console.log(myName[0]);
 // console.log(myName['length']);
 
-
+/* 
 var array = new Array('rezwan','rahim','rupak');
 var newArray = ['rezwan','rahim','rupak','toma'];
 var singleData = newArray[2];
@@ -29,4 +29,11 @@ for(var i = 0; i< newArray.length; i++){
 console.log(newArray.indexOf('rezwan'));
 array.splice(1,1);
 
- console.log(array);
+ console.log(array); */
+
+ var newA = [];
+ for(var i = 0; i < 5; i++){
+     newA[i] = prompt("Enter number ");
+
+ }
+ console.log(newA);
