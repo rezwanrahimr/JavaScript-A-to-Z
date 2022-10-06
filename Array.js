@@ -40,12 +40,12 @@ array.splice(1,1);
 
 //some array libary methods
 // splice
-var name = ['rezwan','rahim','rupak','toma'];
-name.push('kornameKI','ki kors','gumas na ken','afganistan','unaited state');
+var name = ['rezwan', 'rahim', 'rupak', 'toma'];
+name.push('kornameKI', 'ki kors', 'gumas na ken', 'afganistan', 'unaited state');
 // add array element using splice.
-name.splice(1,0,'Bangladesh','pakistan');
+name.splice(1, 0, 'Bangladesh', 'pakistan');
 // remove array element usign splice.
-name.splice(0,2);
+name.splice(0, 2);
 
 
 // sorting array and reverse array using array libary method.
@@ -54,15 +54,31 @@ name.reverse();
 console.log(name);
 
 // array number sorting.
-var numberr = [23,43,54,2,6,76];
-numberr.sort(function(a,b){
-    return a-b;
-    
+var numberr = [23, 43, 54, 2, 6, 76];
+numberr.sort(function (a, b) {
+    return a - b;
+
 })
 // array number reverse.
-var number = [3,545,65,34,756];
-number.sort(function(a,b){
-    return b-a;
+var number = [3, 545, 65, 34, 756];
+number.sort(function (a, b) {
+    return b - a;
 })
 console.log(numberr);
 console.log(number);
+
+// task 8
+function highestScore(scores) {
+    var result = 0;
+    for (var i = 0; i < scores.length; i++) {
+        if (result < scores[i]) {
+            result = scores[i];
+
+        }
+    }
+
+    return result;
+}
+
+;
+console.log(highestScore([5, 6, 34, 75]));
