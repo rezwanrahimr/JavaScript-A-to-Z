@@ -31,9 +31,38 @@ array.splice(1,1);
 
  console.log(array); */
 
- var newA = [];
- for(var i = 0; i < 5; i++){
-     newA[i] = prompt("Enter number ");
+//  var newA = [];
+//  for(var i = 0; i < 5; i++){
+//      newA[i] = prompt("Enter number ");
 
- }
- console.log(newA);
+//  }
+//  console.log(newA);
+
+//some array libary methods
+// splice
+var name = ['rezwan','rahim','rupak','toma'];
+name.push('kornameKI','ki kors','gumas na ken','afganistan','unaited state');
+// add array element using splice.
+name.splice(1,0,'Bangladesh','pakistan');
+// remove array element usign splice.
+name.splice(0,2);
+
+
+// sorting array and reverse array using array libary method.
+name.sort();
+name.reverse();
+console.log(name);
+
+// array number sorting.
+var numberr = [23,43,54,2,6,76];
+numberr.sort(function(a,b){
+    return a-b;
+    
+})
+// array number reverse.
+var number = [3,545,65,34,756];
+number.sort(function(a,b){
+    return b-a;
+})
+console.log(numberr);
+console.log(number);
