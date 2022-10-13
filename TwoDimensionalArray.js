@@ -1,5 +1,7 @@
 /* var newArray = [['rezwan',31],['rahim',01],['rupak',14]];
 console.log(newArray[0][0]) */
+
+// task 8
 function highestRunScorer(playersInfo){
     var highestRun = 0;
     var highestPlayerName = " ";
@@ -12,10 +14,7 @@ function highestRunScorer(playersInfo){
                 
             }
         }
-
         return highestPlayerName;
-
-       
     }
 }
 var playersInfo =  [["rezwan",31],["rahim",06],["rupak",30]];
