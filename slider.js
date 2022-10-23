@@ -16,4 +16,12 @@ function next() {
   }
 }
 
-function pre() {}
+function pre() {
+  count--;
+  if (count <= 0) {
+    count = 2;
+    image.src = allImage[count];
+  } else {
+    image.src = allImage[count];
+  }
+}
