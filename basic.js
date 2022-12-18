@@ -19,6 +19,14 @@ console.log(name); */
 console.log(arrayElement[1]); */
 
 // Nested array
-var arrayElement = [["rezwan", 31], ["rahim,01"]];
+/* var arrayElement = [["rezwan", 31], ["rahim,01"]];
 var output = arrayElement[0][1];
 console.log(output);
+ */
+
+// array element add and remove.
+var myArray = [3, 43, 5, 43, 75, 76];
+myArray.push([31]); // add
+console.log(myArray);
+myArray.pop(); //remove
+console.log(myArray);
