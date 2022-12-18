@@ -25,8 +25,15 @@ console.log(output);
  */
 
 // array element add and remove.
-var myArray = [3, 43, 5, 43, 75, 76];
+/* var myArray = [3, 43, 5, 43, 75, 76];
 myArray.push([31]); // add
 console.log(myArray);
 myArray.pop(); //remove
-console.log(myArray);
+console.log(myArray); */
+
+// Global Scope and Function
+var name = "Rezwan Rahim";
+function myName() {
+  console.log("Name : ", name);
+}
+myName();
