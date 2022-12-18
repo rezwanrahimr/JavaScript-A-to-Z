@@ -15,6 +15,10 @@
 
     <!-- Writing into an HTML element, using innerHTML. -->
     <h1 id="demo"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+    <button onclick="codeBlocks()">Click</button>
 
 
     <script>
@@ -25,6 +29,15 @@
         window.alert('Hello,there');
         //Writing into the browser console, using console.log().
         console.log("Hello js");
+
+
+
+        // JavaScript Code Blocks
+        function codeBlocks() {
+            document.getElementById('demo2').innerHTML = "Code Blocks 1";
+            document.getElementById('demo3').innerHTML = "Code Blocks 2";
+
+        }
     </script>
 </body>
 
