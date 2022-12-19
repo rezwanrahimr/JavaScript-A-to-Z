@@ -39,7 +39,7 @@ function myName() {
 myName(); */
 
 // switch case
-function UsingSwitchCase(a) {
+/* function UsingSwitchCase(a) {
   switch (a) {
     case 3:
       console.log("The value is : 3");
@@ -54,4 +54,10 @@ function UsingSwitchCase(a) {
       console.log("No Value here");
   }
 }
-UsingSwitchCase(10);
+UsingSwitchCase(10); */
+
+// function
+function jsFunction(numOne, numTwo) {
+  return numOne * numTwo;
+}
+console.log(jsFunction(2, 1));
