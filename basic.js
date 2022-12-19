@@ -32,8 +32,26 @@ myArray.pop(); //remove
 console.log(myArray); */
 
 // Global Scope and Function
-var name = "Rezwan Rahim";
+/* var name = "Rezwan Rahim";
 function myName() {
   console.log("Name : ", name);
 }
-myName();
+myName(); */
+
+// switch case
+function UsingSwitchCase(a) {
+  switch (a) {
+    case 3:
+      console.log("The value is : 3");
+      break;
+    case 5:
+      console.log("This value is : 5");
+      break;
+    case 9:
+      console.log("This value is : 9");
+      break;
+    default:
+      console.log("No Value here");
+  }
+}
+UsingSwitchCase(10);
