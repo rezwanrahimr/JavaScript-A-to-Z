@@ -15,11 +15,16 @@
 
     <!-- Writing into an HTML element, using innerHTML. -->
     <h1 id="demo"></h1>
-    <h1 id="demo2"></h1>
+    <h1 id="demo2" onclick="codeBlocks()">hello</h1>
     <h1 id="demo3"></h1>
 
     <button onclick="codeBlocks()">Click</button>
 
+
+    <!-- event -->
+    <button id="time" onclick="time()">Time</button>
+
+    <button onkeydown="this.innerHTML = time()">update time</button>
 
     <script>
         document.getElementById('demo').innerHTML = "rezwan rahim";
@@ -34,9 +39,16 @@
 
         // JavaScript Code Blocks
         function codeBlocks() {
-            document.getElementById('demo2').innerHTML = 3 + 2 + "5";
+            var text = document.getElementById('demo2').innerHTML = text.replace("hello", "World");
+
             document.getElementById('demo3').innerHTML = "Code Blocks 2";
 
+        }
+
+        // event 
+        function time() {
+            // document.getElementById("time").innerHTML = window.Date();
+            return window.Date();
         }
     </script>
 </body>

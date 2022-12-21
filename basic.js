@@ -57,7 +57,37 @@ myName(); */
 UsingSwitchCase(10); */
 
 // function
-function jsFunction(numOne, numTwo) {
+/* function jsFunction(numOne, numTwo) {
   return numOne * numTwo;
 }
-console.log(jsFunction(2, 1));
+console.log(jsFunction(2, 1)); */
+
+// object
+/* const obj = {
+  firstName: "Rezwan Rahim",
+  lastName: "Rupak",
+  age: 23,
+  position: "Jr Developer",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+}; */
+// add new propratie in objects
+// obj.date = "12/19/2022";
+// obj["year"] = 2022;
+// Delete propratices of objects
+// delete obj.age;
+// console.log(obj);
+/* console.log(obj.age);
+console.log(obj["position"]);
+console.log(obj.fullName()); */
+
+// concat string
+var text1 = "Hello";
+var text2 = "World";
+var result = text1.concat(" ", text2);
+console.log(result);
+var simple = "x";
+console.log(simple.padStart(4, "x"));
+console.log("charAt :", text1.charAt(4));
+console.log(text2[0]);
