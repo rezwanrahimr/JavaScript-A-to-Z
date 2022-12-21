@@ -153,4 +153,5 @@ const NumberOfArray = [32, 4, 655, 4, 67];
 const result = NumberOfArray.sort(function (a, b) {
   return b - a;
 });
-console.log(result);
+console.log(result[result.length - 1]);
+console.log(Math.min.apply(null, NumberOfArray));
