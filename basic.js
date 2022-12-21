@@ -83,7 +83,7 @@ console.log(obj["position"]);
 console.log(obj.fullName()); */
 
 // concat string
-var text1 = "Hello";
+var text1 = "Hello world how are you world";
 var text2 = "World";
 var result = text1.concat(" ", text2);
 console.log(result);
@@ -91,3 +91,9 @@ var simple = "x";
 console.log(simple.padStart(4, "x"));
 console.log("charAt :", text1.charAt(4));
 console.log(text2[0]);
+console.log(text1.indexOf("how"));
+console.log(text1.search("how"));
+console.log(text1.match("are"));
+console.log(text1.includes("world"));
+console.log(text1.startsWith("Hello"));
+console.log(text1.endsWith("world"));
