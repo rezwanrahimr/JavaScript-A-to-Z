@@ -133,7 +133,7 @@ const car2 = [];
 car2[0] = "bolvo";
 car.push("hero");
 car[car.length] = "bike";
-console.log(car);
+
 const car3 = new Array();
 car[1] = "BBmw";
 console.log(car.length);
@@ -142,5 +142,15 @@ var text = "";
 for (var i = 0; i < car.length; i++) {
   text += ` ${car[i]} `;
 }
+console.log(car.join("  "));
+car.splice(0, 0, "Hello", "world");
+car.splice(0, 1);
+// console.log(car.toString());
+console.log(car.reverse());
 
-console.log(text);
+// comparing
+const NumberOfArray = [32, 4, 655, 4, 67];
+const result = NumberOfArray.sort(function (a, b) {
+  return b - a;
+});
+console.log(result);
