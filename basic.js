@@ -83,7 +83,7 @@ console.log(obj["position"]);
 console.log(obj.fullName()); */
 
 // concat string
-var text1 = "Hello world how are you world";
+/* var text1 = "Hello world how are you world";
 var text2 = "World";
 var result = text1.concat(" ", text2);
 console.log(result);
@@ -96,4 +96,51 @@ console.log(text1.search("how"));
 console.log(text1.match("are"));
 console.log(text1.includes("world"));
 console.log(text1.startsWith("Hello"));
-console.log(text1.endsWith("world"));
+console.log(text1.endsWith("world")); */
+
+// js template literals
+/* const text = `hello'world! "This is Rezwan.",
+              "Now I am study in Dhaka International University",
+              "Computer Science and Engineering."`;
+console.log(text);
+var firstName = "Rezwan Rahim";
+var lastName = "Rupak";
+console.log(`Full Name : ${firstName} ${lastName}`);
+
+function myDetails(name, age, position) {
+  console.log(name), console.log(age), console.log(position);
+}
+console.log(`My Details : ${myDetails(`rezwan rahim`, `34`, `js programmer`)}`);
+
+ */
+
+// js bigInt
+// is safe integer method
+// console.log(Number.isSafeInteger(-1));
+// safe interger
+/* console.log(Number.isInteger(10));
+console.log(Number.isInteger(10.5));
+const number = 10;
+const num = number.toString();
+console.log(typeof num); */
+
+// let x = 3.45354;
+// console.log(x.toPrecision(5));
+
+// Js Array
+const car = ["volvo", "BMW", "corola"];
+const car2 = [];
+car2[0] = "bolvo";
+car.push("hero");
+car[car.length] = "bike";
+console.log(car);
+const car3 = new Array();
+car[1] = "BBmw";
+console.log(car.length);
+// get the ALL element in any array
+var text = "";
+for (var i = 0; i < car.length; i++) {
+  text += ` ${car[i]} `;
+}
+
+console.log(text);
