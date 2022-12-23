@@ -199,7 +199,7 @@ console.log(myFunction());
 
 // Math.random
 // console.log(Math.ceil(Math.random() * 100));
-var namee = "rezwan";
+/* var namee = "rezwan";
 var age = 23;
 console.log(namee.length == 4 ? "sort name" : "long name");
 console.log(
@@ -231,3 +231,27 @@ switch (new Date().getDay()) {
     break;
 }
 console.log("To Day is : ", day);
+ */
+/* const a = ["rezwan", "rahim", "rupak"];
+for (x of a) {
+  console.log(x);
+}
+ */
+
+/* const obj = { rezwan: 34, rahim: 21, rupak: 31 };
+for (var x in obj) {
+  console.log(obj[x]);
+} */
+
+/* const ar = [3, 4, 5, 6, 4, 6, 4, 7, 8, 1];
+ar.map(myFunction);
+function myFunction(value, index, array) {
+  console.log(value);
+  console.log(index);
+  console.log(array[index]);
+} */
+
+const myName = "Rezwan Rahim Rupak";
+for (name of myName) {
+  console.log(name);
+}
