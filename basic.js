@@ -128,7 +128,7 @@ console.log(typeof num); */
 // console.log(x.toPrecision(5));
 
 // Js Array
-const car = ["volvo", "BMW", "corola"];
+/* const car = ["volvo", "BMW", "corola"];
 const car2 = [];
 car2[0] = "bolvo";
 car.push("hero");
@@ -154,4 +154,80 @@ const result = NumberOfArray.sort(function (a, b) {
   return b - a;
 });
 console.log(result[result.length - 1]);
-console.log(Math.min.apply(null, NumberOfArray));
+console.log(Math.min.apply(null, NumberOfArray)); */
+//
+/* const arrayElement = [4, 5, 6, 4, 7, 4, 6, 3, 2, 87];
+arrayElement.map((a = (a) => console.log(a)));
+arrayElement.filter((b = (b) => console.log(b)));
+*/
+// const numbers = [45, 4, 9, 16, 25];
+// console.log(numbers.indexOf(45) + 1);
+/* let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+  console.log("total:", total);
+  console.log("value:", value);
+  console.log("index:", index);
+  console.log("array:", array);
+  return total + value;
+}
+myFunction();
+ */
+
+// numbers.every((a = (a) => console.log(a < 50)));
+// numbers.some((a = (a) => console.log(a > 50)));
+/* const numbers = [20, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value < 18;
+}
+console.log(myFunction());
+ */
+
+// console.log(new Date(2018, 11, 24, 10, 33, 30, 0));
+// Math js
+// console.log(Math.round(4.6));
+// console.log(Math.ceil(4.2));
+// console.log(Math.floor(4.5));
+// console.log(Math.trunc(4.9));
+// console.log(Math.sign());
+// console.log(Math.pow(8, 2));
+// console.log(Math.sqrt(64));
+// const d = [3, 4, 5, 6, 10];
+// d.map((a = (a) => console.log(Math.max(a))));
+
+// Math.random
+// console.log(Math.ceil(Math.random() * 100));
+var namee = "rezwan";
+var age = 23;
+console.log(namee.length == 4 ? "sort name" : "long name");
+console.log(
+  age < 25 ? "This time for challenging for you !" : "Your time is growing"
+);
+console.log(new Date().getDay());
+var day = " ";
+switch (new Date().getDay()) {
+  case 0:
+    day = "SunDay";
+    break;
+  case 1:
+    day = "MonDay";
+    break;
+  case 2:
+    day = "tuesDay";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "ThursDay";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "SaturDay";
+    break;
+}
+console.log("To Day is : ", day);
