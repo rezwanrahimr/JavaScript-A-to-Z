@@ -251,7 +251,42 @@ function myFunction(value, index, array) {
   console.log(array[index]);
 } */
 
-const myName = "Rezwan Rahim Rupak";
+/* const myName = "Rezwan Rahim Rupak";
 for (name of myName) {
   console.log(name);
 }
+ */
+
+// while loop
+/* var i = 0;
+while (i < 18) {
+  console.log(i);
+  i++;
+  if (i === 5) {
+    console.log("skip");
+    continue;
+  }
+  if (i == 10) {
+    break;
+  }
+} */
+
+// do while loop
+/* var i = 0;
+do {
+  console.log("rezwan rahim");
+  i++;
+} while (i < 10);
+ */
+// js Maps
+/* const food = new Map();
+food.set("mango", 200);
+food.set("mango0", 200);
+food.delete("mango0");
+console.log(food.has("mango"));
+console.log(food.size); */
+
+const text = "Hello world! How are you";
+const re = text.replace("world!", "duniya");
+console.log(text);
+console.log(text.search("world"));
