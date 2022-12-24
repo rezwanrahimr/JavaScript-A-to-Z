@@ -309,7 +309,7 @@ try {
 } */
 // In js this refer a object.
 // this keyword!
-const personOne = {
+/* const personOne = {
   fullName: function () {
     return this.firstName + " " + this.lastName;
   },
@@ -322,4 +322,23 @@ const person = {
     return this.firstName + " " + this.lastName;
   },
 };
-console.log(personOne.fullName.call(person));
+console.log(personOne.fullName.call(person)); */
+
+// Javascript class
+class person {
+  constructor(name, age, position) {
+    this.name = name;
+    this.age = age;
+    this.position = position;
+  }
+  details(location, presentAddress) {
+    this.location = location;
+    this.presentAddress = presentAddress;
+  }
+}
+
+const person1 = new person("Rezwan Rahim", 23, "Jr Programmer");
+const person2 = new person("Toma", 18, "Nothing..");
+person2.details("Feni", "Bangladesh");
+console.log(person1);
+console.log(person2);
