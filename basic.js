@@ -286,7 +286,7 @@ food.delete("mango0");
 console.log(food.has("mango"));
 console.log(food.size); */
 
-const text = "Hello world! How are you";
+/* const text = "Hello world! How are you";
 const re = text.replace("world!", "duniya");
 console.log(text);
-console.log(text.search("world"));
+console.log(text.search("world")); */
