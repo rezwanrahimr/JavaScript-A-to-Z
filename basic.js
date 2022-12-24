@@ -290,3 +290,36 @@ console.log(food.size); */
 const re = text.replace("world!", "duniya");
 console.log(text);
 console.log(text.search("world")); */
+
+// js error hendaling
+/* var age = 25;
+try {
+  if (age > 30) {
+    throw new Error("You Are a Older!");
+  }
+  if (age < 18) {
+    throw new Error("You Are a Young!");
+  }
+  if (age === NaN) {
+    throw new Error("Please Give the Number Value");
+  }
+} catch (err) {
+  console.log(err);
+} finally {
+} */
+// In js this refer a object.
+// this keyword!
+const personOne = {
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+const person = {
+  firstName: "Rezwan",
+  lastName: "Rahim",
+  skill: ["Html", "Css", "JavaScript", "React"],
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+console.log(personOne.fullName.call(person));
