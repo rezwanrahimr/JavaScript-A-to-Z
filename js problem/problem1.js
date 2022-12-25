@@ -77,9 +77,53 @@ PRATICE ALL PROBLEM AGAIN
 console.log(generatRandom(10, 0)); */
 
 //2. How can you order roll numbers of students in your class sequentially?
-const studentRoll = [3, 5, 7, 8, 98, 34];
+/* const studentRoll = [3, 5, 7, 8, 98, 34];
 console.log(
   studentRoll.sort(function (a, b) {
     return a - b;
   })
 );
+ */
+//3. How can you order names of students in your class sequentially?
+/* const student = ["rahim", "sofiq", "zabbar", "karim", "asif"];
+console.log(student.sort());
+ */
+
+//4. Write a function that can tell us whether an year is a leap year or not.
+/* function isLeapYear(year) {
+  if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log(`${year} is Leap Year`);
+  } else {
+    console.log(`${year} is Not Leap Year`);
+  }
+}
+isLeapYear(2026); */
+
+//5. How would you determine the number of vowels in a sentence?
+/* const vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+const checkVowel = (sentence) => {
+  let count = 0;
+  let updateArray = Array.from(sentence);
+  updateArray.forEach(function (value) {
+    if (vowel.includes(value)) {
+      count++;
+    }
+  });
+  return count;
+};
+console.log(
+  checkVowel(
+    "Hello world how are you! This is rezwan! Now i am locat in my home"
+  )
+);
+ */
+
+//6. How would you extract the duplicate numbers in an array?
+const numbers = [3, 5, 6, 54, 75, 34, 53, 45, 2, 75, 56, 3];
+let newArrayNum = [];
+numbers.forEach(function (value, index, array) {
+  if (array.indexOf(value) !== index) {
+    newArrayNum.push(value);
+  }
+});
+console.log(newArrayNum);
