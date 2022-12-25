@@ -71,7 +71,15 @@ console.log(duplicateArry); */
 PRATICE ALL PROBLEM AGAIN
 ...............................................*/
 // 1. Write a function that can print any random number between any two given numbers (including them).
-function generatRandom(max, min) {
+/* function generatRandom(max, min) {
   return Math.ceil(Math.random() * (max - min + 1) + min);
 }
-console.log(generatRandom(10, 0));
+console.log(generatRandom(10, 0)); */
+
+//2. How can you order roll numbers of students in your class sequentially?
+const studentRoll = [3, 5, 7, 8, 98, 34];
+console.log(
+  studentRoll.sort(function (a, b) {
+    return a - b;
+  })
+);
