@@ -325,7 +325,7 @@ const person = {
 console.log(personOne.fullName.call(person)); */
 
 // Javascript class
-class person {
+/* class person {
   constructor(name, age, position) {
     this.name = name;
     this.age = age;
@@ -337,8 +337,31 @@ class person {
   }
 }
 
+class listTwo extends person {
+  constructor(name, age) {
+    super(name, age);
+    this.name = name;
+    this.age = age;
+  }
+  static exMethod() {
+    console.log("I am Extra Method!");
+  }
+}
+const listItem = new listTwo("Hello World", 00);
+listTwo.exMethod();
+console.log(listItem);
+
 const person1 = new person("Rezwan Rahim", 23, "Jr Programmer");
 const person2 = new person("Toma", 18, "Nothing..");
-person2.details("Feni", "Bangladesh");
-console.log(person1);
-console.log(person2);
+person2.details("Feni", "Bangladesh"); */
+// console.log(person1);
+// console.log(person2);
+
+// js Modules
+// There are any js file we can variable and function export and import this file.we have a two option in this way.One is name and another is a default.
+// so name export is a two way one is inline export another is bottom export. for example:
+export const myName = "rezwan rahim"; // inline export
+
+const age = 45;
+const location = "Dhaka";
+export default { age, location };
