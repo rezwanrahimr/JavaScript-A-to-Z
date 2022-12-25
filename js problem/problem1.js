@@ -29,7 +29,7 @@ const isLeapYear = (year) => {
 console.log(isLeapYear(2026)); */
 
 // find how many vowel in a sentance.
-const vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+/* const vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 function checkVowel(sentance) {
   let count = 0;
   const letter = Array.from(sentance);
@@ -43,4 +43,16 @@ function checkVowel(sentance) {
 let result = checkVowel(
   "Hello World! This is Rezwan!I belive my self and become a good programmer"
 );
-console.log(result);
+console.log(result); */
+
+/*................................
+FIND DUPLICATE VALUE IN ANY ARRAY
+*/
+const element = [4, 5, 6, 5, 76, 45, 4, 6, 5, 7, 5, 7, 45, 75, 7];
+let duplicateArry = [];
+const duplicate = element.filter(function (value, index, array) {
+  if (array.indexOf(value) !== index) {
+    duplicateArry.push(value);
+  }
+});
+console.log(duplicateArry);
