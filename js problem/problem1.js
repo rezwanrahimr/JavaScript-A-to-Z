@@ -1,4 +1,4 @@
-// Create random number depeant on user.
+/* // Create random number depeant on user.
 const randomMachine = (max = 0, min = 0) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
@@ -26,4 +26,21 @@ const isLeapYear = (year) => {
     return false;
   }
 };
-console.log(isLeapYear(2026));
+console.log(isLeapYear(2026)); */
+
+// find how many vowel in a sentance.
+const vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+function checkVowel(sentance) {
+  let count = 0;
+  const letter = Array.from(sentance);
+  letter.forEach(function (value) {
+    if (vowel.includes(value)) {
+      count++;
+    }
+  });
+  return count;
+}
+let result = checkVowel(
+  "Hello World! This is Rezwan!I belive my self and become a good programmer"
+);
+console.log(result);
