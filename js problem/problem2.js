@@ -31,7 +31,7 @@ console.log(linearSearch(["a", "b", "c", "d", "c"], "c")); */
 /*...................................
 FIND THE LONGEST ELEMENT IN ANY ARRAY AND RETURN THE INDEX NUMBER THIS ELEMENT
 ..*/
-function longest(array) {
+/* function longest(array) {
   let current = "";
   let length = array.length;
   for (var i = 0; i < length; i++) {
@@ -42,4 +42,27 @@ function longest(array) {
   return [current, array.indexOf(current)];
 }
 
-console.log(longest(["hello", "how", "areyou"]));
+console.log(longest(["hello", "how", "areyou"])); */
+
+//// ১-১০০ পযন্ত কোন সংখ্যা গুলো ৩,৫, এবং ৩ ও ৫ উভয় সংখ্যা দ্বারা বিভাজ্য তা বের করুন ।
+/* function fizzBuzz(number) {
+  for (var i = 1; i <= number; i++) {
+    if (i % 15 === 0) {
+      console.log(i, "FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log(i, "Fizz");
+    } else if (i % 5 === 0) {
+      console.log(i, "Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+fizzBuzz(100);
+ */
+
+/*....................................
+// array থেকে false value কিভাবে খুজে বের করে বাদ দিতে পারি।
+*/
+/* const arrayEle = ["hello", undefined, 56, false, "how", null, " ", NaN, true];
+console.log(arrayEle.filter(Boolean)); */
