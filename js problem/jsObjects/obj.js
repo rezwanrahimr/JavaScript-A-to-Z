@@ -36,14 +36,36 @@ for (let x in obj.moreDetails) {
 } */
 
 // Objects Methods
-const obj = {
+/* const obj = {
   firstName: "rezwan Rahim",
   lsatName: "rupak",
+  get location() {
+    return this.lsatName + "Bangladesh";
+  },
+  set currentLocation(loc) {
+    return loc;
+  },
   fullName: function () {
     return `Full-Name: ${this.firstName} ${this.lsatName}`;
   },
 };
+console.log("Location :", (obj.currentLocation = "en"));
 obj.name = function () {
   return this.firstName;
 };
-console.log(obj.name());
+let myobj = Object.values(obj);
+let myJson = JSON.stringify(obj); */
+
+// Constuructors objects
+// Constuructors Function
+function Person(name, age, position) {
+  this.Name = name;
+  this.Age = age;
+  this.Position = position;
+}
+Person.prototype.Location = "IN THE WORLD";
+Person.prototype.about = function () {
+  return this.Name;
+};
+const karim = new Person("Karim", 23, "Seo");
+console.log(karim.about());
