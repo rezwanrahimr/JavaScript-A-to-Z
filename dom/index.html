@@ -6,21 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background: yellow;
+            margin: 0 auto;
+        }
+
+        #animate {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background: tomato;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>User Info:</h2>
-    <form id="userInfo" action="">
-        First Name: <input type="text" name="name" id="" value="rezwan">
-        Last Name: <input type="text" name="" id="" value="rahim">
-        Email: <input type="email" name="" id="" value="Email">
-        <input type="submit" value="submit">
-    </form>
-    <div>
-        <p id="firstName"></p>
-        <p id="lastName"></p>
-        <p id="email"></p>
+
+    <div id="container">
+        <div id="animate"></div>
     </div>
+    <button onclick="myFunction()">Animation</button>
     <script src="./script.js"></script>
 </body>
 

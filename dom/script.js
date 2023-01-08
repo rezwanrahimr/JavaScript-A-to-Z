@@ -1,10 +1,14 @@
-let info = document.getElementById("userInfo");
-let data = document.querySelectorAll("p");
-try {
-  data == undefined;
-  for (var i = 0; i < info.length; i++) {
-    data[i].innerHTML = info.elements[i].value;
+function myFunction() {
+  let animation = document.getElementById("animate");
+  let interval = setInterval(animate, 5);
+  let count = 0;
+  function animate() {
+    if (count < 420) {
+      count++;
+      animation.style.top = count + "px";
+      animation.style.left = count + "px";
+    } else {
+      clearInterval(interval);
+    }
   }
-} catch (err) {
-  console.log("Error:" + err);
 }
