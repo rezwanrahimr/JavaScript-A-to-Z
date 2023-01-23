@@ -48,12 +48,19 @@
     <script>
         document.querySelector(".test");
         function fun() {
-            let value = window.confirm("Are You sure ");
+            /* let value = window.confirm("Are You sure ");
             if (value === true) {
                 alert("sure")
             }
             else {
                 alert("false")
+            } */
+            let person = window.prompt("Enter your name: ");
+            if (person === null || person === " ") {
+                alert("Please enter your name")
+            }
+            else {
+                alert("Hi" + person + "How are you")
             }
         }
     </script>
