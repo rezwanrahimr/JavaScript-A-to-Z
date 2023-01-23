@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container {
+        /*  #container {
             width: 500px;
             height: 500px;
             position: relative;
@@ -20,17 +20,43 @@
             height: 80px;
             position: absolute;
             background: tomato;
-        }
+        } */
     </style>
 </head>
 
 <body>
 
-    <div id="container">
+    <!-- <div id="container">
         <div id="animate"></div>
     </div>
-    <button onclick="myFunction()">Animation</button>
-    <script src="./script.js"></script>
+    <button onclick="myFunction()">Animation</button> -->
+
+
+    <!-- DOM EVENT -->
+
+    <!-- <h2 onclick="this.style.color = 'red'">Hello WORLD</h2> -->
+    <!-- <h2 id="h" onclick="myFun(this)">Hello World ! How are you</h2>
+    <h3 onclick="myFun(this)">HI</h3>
+    <p id="how-c"></p>
+    <h4 id="how">How are you</h4> -->
+
+    <div class="test">
+
+    </div>
+    <button onclick="fun()">Click</button>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        document.querySelector(".test");
+        function fun() {
+            let value = window.confirm("Are You sure ");
+            if (value === true) {
+                alert("sure")
+            }
+            else {
+                alert("false")
+            }
+        }
+    </script>
 </body>
 
 </html>
