@@ -40,14 +40,22 @@
     <p id="how-c"></p>
     <h4 id="how">How are you</h4> -->
 
-    <div class="test">
-
+    <div>
+        <h3 class="test"></h3>
     </div>
-    <button onclick="fun()">Click</button>
+    <button onclick="timeOut()">time out</button>
+    <button onclick="clearTimeOut()">time out</button>
+    <button onclick="setIntervall()">set interval</button>
+    <button onclick="clearIntervall()">interval out</button>
     <!-- <script src="./script.js"></script> -->
     <script>
-        document.querySelector(".test");
-        function fun() {
+        let tex = document.querySelector(".test");
+        let p;
+        function timeOut() {
+            p = setTimeout(function () {
+                tex.innerHTML = "time out "
+            }, 5000)
+
             /* let value = window.confirm("Are You sure ");
             if (value === true) {
                 alert("sure")
@@ -55,13 +63,25 @@
             else {
                 alert("false")
             } */
-            let person = window.prompt("Enter your name: ");
+            /* let person = window.prompt("Enter your name: ");
             if (person === null || person === " ") {
                 alert("Please enter your name")
             }
             else {
                 alert("Hi" + person + "How are you")
-            }
+            } */
+        }
+        function clearTimeOut() {
+            clearTimeout(p)
+        }
+        let int;
+        function setIntervall() {
+            int = setInterval(function () {
+                tex.innerHTML = new Date().toLocaleTimeString();
+            }, 1000)
+        }
+        function clearIntervall() {
+            clearInterval(int)
         }
     </script>
 </body>
