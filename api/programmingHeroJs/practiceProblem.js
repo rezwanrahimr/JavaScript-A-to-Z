@@ -15,6 +15,14 @@ var calculate = (mathematics + biology + chemistry + physics + bangla) / 5;
 console.log(calculate.toFixed(2)); */
 
 // Pratice problme 3
-var first = "Hello This is Rezwan Rahim",
+/* var first = "Hello This is Rezwan Rahim",
   second = "I am a become a Programmer in the world!";
 console.log(first + " " + second);
+ */
+
+// Pratice Problem 4
+var fruits = ["apple", "banana", "orange"];
+fruits[1] = "Mango";
+fruits.pop();
+fruits.push("Water");
+console.log(fruits);
