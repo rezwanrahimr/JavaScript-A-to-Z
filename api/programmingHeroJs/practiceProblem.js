@@ -21,8 +21,16 @@ console.log(first + " " + second);
  */
 
 // Pratice Problem 4
-var fruits = ["apple", "banana", "orange"];
+/* var fruits = ["apple", "banana", "orange"];
 fruits[1] = "Mango";
 fruits.pop();
 fruits.push("Water");
-console.log(fruits);
+console.log(fruits); */
+
+/*
+Loop pratice
+*/
+// 1. Display "ajke amar mon valo nei" for 39 times
+for (var i = 0; i <= 39; i++) {
+  console.log(i, "ajke amar mon valo nei");
+}
