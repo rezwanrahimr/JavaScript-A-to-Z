@@ -49,8 +49,17 @@ while (i <= 456) {
 } */
 
 //4. show all odd numbers 581 to 623.
-let i = 581;
+/* let i = 581;
 while (i <= 623) {
   console.log(i);
   i++;
+}
+ */
+
+//5. run a loop from 30 to 86. this loop will stop if the values get higher the 86.
+for (var i = 30; i < 86; i++) {
+  if (i > 50) {
+    break;
+  }
+  console.log(i);
 }
