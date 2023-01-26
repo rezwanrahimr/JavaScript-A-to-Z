@@ -31,6 +31,12 @@ console.log(fruits); */
 Loop pratice
 */
 // 1. Display "ajke amar mon valo nei" for 39 times
-for (var i = 0; i <= 39; i++) {
+/* for (var i = 0; i <= 39; i++) {
   console.log(i, "ajke amar mon valo nei");
+} */
+
+// 2. Display numbers between 58 to 98.
+/* for (var i = 58; i <= 98; i++) {
+  console.log(i);
 }
+ */
