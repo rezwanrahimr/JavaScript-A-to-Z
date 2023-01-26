@@ -40,3 +40,10 @@ Loop pratice
   console.log(i);
 }
  */
+
+// 3. show all even numbers from 412 to 456
+let i = 412;
+while (i <= 456) {
+  console.log(i);
+  i++;
+}
