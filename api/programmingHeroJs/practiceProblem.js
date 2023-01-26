@@ -42,8 +42,15 @@ Loop pratice
  */
 
 // 3. show all even numbers from 412 to 456
-let i = 412;
+/* let i = 412;
 while (i <= 456) {
+  console.log(i);
+  i++;
+} */
+
+//4. show all odd numbers 581 to 623.
+let i = 581;
+while (i <= 623) {
   console.log(i);
   i++;
 }
