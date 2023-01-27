@@ -65,12 +65,18 @@ while (i <= 623) {
 }
  */
 
-//6.
-function foo() {
+//6. practise task 1
+/* function foo() {
   console.log("Foo");
   bar();
 }
 function bar() {
   console.log("Bar");
 }
-foo();
+foo(); */
+
+// practise task 2
+function make_avg(one, two, three) {
+  return (one + two + three) / 3;
+}
+console.log(make_avg(2, 3, 4));
