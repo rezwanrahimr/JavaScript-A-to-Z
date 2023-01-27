@@ -83,11 +83,36 @@ console.log(make_avg(2, 3, 4)); */
 
 // practise task 3
 
-function make_avg(element) {
+/* function make_avg(element) {
   let result = 0;
   for (var i = 0; i < element.length; i++) {
     result += element[i];
   }
   return result / element.length;
 }
-console.log(make_avg([2, 3, 4, 10, 6]));
+console.log(make_avg([2, 3, 4, 10, 6])); */
+
+// practise task 4
+/* function odd_even(num) {
+  if (num % 2 === 0) {
+    console.log("Event NUmber");
+  } else {
+    console.log("Odd Number");
+  }
+}
+odd_even(4); */
+
+// practise task 5
+function findLeapYear(element) {
+  let leapYear = [];
+  for (var i = 0; i < element.length; i++) {
+    if (
+      element[i] % 4 === 0 &&
+      (element[i] % 400 === 0 || element[i] % 100 !== 0)
+    ) {
+      leapYear.push(element[i]);
+    }
+  }
+  return leapYear;
+}
+console.log(findLeapYear([2023, 2024, 2025, 2028, 2030]));
