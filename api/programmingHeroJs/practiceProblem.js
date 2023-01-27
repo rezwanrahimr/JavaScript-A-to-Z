@@ -57,9 +57,20 @@ while (i <= 623) {
  */
 
 //5. run a loop from 30 to 86. this loop will stop if the values get higher the 86.
-for (var i = 30; i < 86; i++) {
+/* for (var i = 30; i < 86; i++) {
   if (i > 50) {
     break;
   }
   console.log(i);
 }
+ */
+
+//6.
+function foo() {
+  console.log("Foo");
+  bar();
+}
+function bar() {
+  console.log("Bar");
+}
+foo();
