@@ -103,7 +103,7 @@ console.log(make_avg([2, 3, 4, 10, 6])); */
 odd_even(4); */
 
 // practise task 5
-function findLeapYear(element) {
+/* function findLeapYear(element) {
   let leapYear = [];
   for (var i = 0; i < element.length; i++) {
     if (
@@ -116,3 +116,40 @@ function findLeapYear(element) {
   return leapYear;
 }
 console.log(findLeapYear([2023, 2024, 2025, 2028, 2030]));
+ */
+
+// js assignment problme
+// NO: One
+// Convart radianToDegree
+function radianToDegree() {}
+// NO: Two
+// Check js file or not
+function isJavaScriptFile(text) {
+  if (text.includes(".js")) {
+    console.log("This is js file");
+  } else {
+    console.log("This is not js file");
+  }
+}
+isJavaScriptFile("hello");
+// NO: Three
+// Calculate the total oil price that I have to pay
+// diesel,petrol,octane
+function oilPrice(dieselQ, petrolQ, octaneQ) {}
+// NO: Four
+/*
+reserved bus = 50
+microbus = 11
+rest people will go by public bus
+people = 65
+bus remaining = 15
+microbus remaing = 2
+public bus : 250* 
+*/
+function publicBusFare(OneParameter) {}
+// NO: Five
+/* 
+ {name:'tom',friend:'rock'}
+ {name:'rock',friend:'tom'}
+*/
+function isBestFriend(one, two) {}
