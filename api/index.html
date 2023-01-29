@@ -6,14 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hello {
+            color: red;
+        }
+
+        .hi {
+            font-size: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="pratice">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ducimus.</div>
-    <div class="pratice">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quasi.</div>
-    <div class="pratice">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, architecto!</div>
-    <!-- <button onclick="loadData()">featch data</button> -->
-    <script src="./script.js"></script>
+
+
+    <ul id="pa">
+        <li>HI</li>
+        <li>HELLO</li>
+        <li>HEY</li>
+    </ul>
+    <input type="text" name="" id="newText">
+    <input type="button" value="submit" onclick="callMe()">
+    <script>
+        let get = document.getElementById('pa')
+        let text = document.getElementById('newText');
+        console.log("hi", text.onchangesadf)
+
+        // Dom Node Elements
+        console.log(get.tagName)
+        console.log(get.attributes)
+        console.log(get.childNodes)
+        // Dom Node Method
+        //......................
+        let userText;
+        document.querySelector("#newText").addEventListener("change", function (e) {
+            userText = e.target.value;
+        })
+
+
+
+        get.setAttribute("class", "hi hello")
+        console.log(get.getAttribute('class'))
+        function callMe() {
+            let newElement = document.createElement("li");
+            let newText = document.createTextNode(userText);
+            newElement.appendChild(newText);
+            get.appendChild(newElement)
+            document.querySelector("#newText").value = " "
+        }
+
+    </script>
+
+
 </body>
 
 </html>
