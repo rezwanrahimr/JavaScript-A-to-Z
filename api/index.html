@@ -20,14 +20,26 @@
 <body>
 
 
+
+    <p id="hello">0</p>
     <ul id="pa">
         <li>HI</li>
         <li>HELLO</li>
         <li>HEY</li>
     </ul>
+    <input type="text" name="" id="newInput">
+    <input type="button" value="submit btn" id="how">
     <input type="text" name="" id="newText">
     <input type="button" value="submit" onclick="callMe()">
+    <input type="button" value="remove" onclick="remove()">
     <script>
+        document.getElementById('how').addEventListener('click', function () {
+
+            let newIn = document.getElementById('newInput');
+            let getInput = newIn.value;
+            console.log(getInput)
+            getInput = " "
+        })
         let get = document.getElementById('pa')
         let text = document.getElementById('newText');
         console.log("hi", text.onchangesadf)
@@ -54,6 +66,20 @@
             get.appendChild(newElement)
             document.querySelector("#newText").value = " "
         }
+
+        function remove() {
+            let con = confirm("Are You Sure Remove This Element?")
+            if (con) {
+                let removeItem = get.lastChild;
+                get.removeChild(removeItem)
+            }
+        }
+        let helloText = document.getElementById('hello');
+        let hi = helloText.replaceData("0", "1", "new");
+        l
+        console.log(hi.data)
+
+
 
     </script>
 

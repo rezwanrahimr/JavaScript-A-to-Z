@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 style="text-align: center; background: red; color: white; padding: 5px ;">Comment Section</h2>
+    <div>
+        <ol id="all-coment" style="font-size: 30px;">
+            <li><span>User: Rezwan Rahim <p id="user"></p></span>
+                <p id="commnet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quia!</p>
+            </li>
+        </ol>
+    </div>
+    <div style="text-align: center;">
+
+        user-name: <input type="text" name="name" id="name"> <br> <br>
+        comment: <textarea name="comment" id="comment" cols="30" rows="10" required>
+            </textarea> <br> <br>
+        <input type="button" value="submit" id="submit">
+
+    </div>
+    <script>
+        document.getElementById('submit').addEventListener('click', function () {
+            let allComment = document.getElementById('all-coment');
+            let user = document.getElementById('name');
+            let userName = user.value;
+            let comment = document.getElementById('comment');
+            let userComment = comment.value;
+            // update data
+            let create = document.createElement('li');
+            let createUser = document.createElement('span');
+            createUser.innerHTML = userName;
+            let createComment = document.createElement('p');
+            createComment.innerHTML = userComment;
+            create.appendChild(createUser);
+            create.appendChild(createComment);
+            allComment.appendChild(create);
+        })
+    </script>
+</body>
+
+</html>
