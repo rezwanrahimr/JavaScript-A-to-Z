@@ -1,9 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header > h1 {
   text-align: center;
-  margin-top: 2em;
+  font-size: 3.5rem;
+  margin-top: 1em;
+}
+.deposit {
+  width: 18em;
+  height: 12em;
+  margin: 2em;
+  background: aquamarine;
+}
+.withdraw {
+  width: 18em;
+  height: 12em;
+  margin: 2em;
+  background-color: aqua;
+}
+.balance {
+  width: 18em;
+  height: 12em;
+  margin: 2em;
+  background-color: rgb(237, 237, 82);
+}
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em;
+  text-align: center;
+}
+.first-section h2 {
+  font-size: 2.5rem;
+  margin-top: 1em;
 }
