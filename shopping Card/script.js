@@ -61,4 +61,7 @@ function subTotal() {
   // tax
   let tax = document.getElementById("tax");
   tax.innerHTML = Math.floor(parseInt(subTotal.innerHTML) * 0.001);
+  // total
+  let total = document.getElementById("total");
+  total.innerHTML = parseInt(tax.innerHTML) + parseInt(subTotal.innerHTML);
 }
