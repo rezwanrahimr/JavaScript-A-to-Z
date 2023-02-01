@@ -37,3 +37,41 @@ header > h1 {
   font-size: 2.5rem;
   margin-top: 1em;
 }
+/* section 2 */
+.please-deposit {
+  width: 28em;
+  height: 12em;
+  background-color: antiquewhite;
+  margin: 0 0 3em 3.5em;
+}
+.section-two {
+  padding: 0 3em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.please-withdraw {
+  width: 28em;
+  height: 12em;
+  background-color: darkviolet;
+  margin: 0 4.5em 3em 0 !important;
+}
+.section-two h3 {
+  margin-top: 0.5em;
+  font-size: 2rem;
+}
+.section-two button {
+  padding: 1em 2em;
+  background: tomato;
+  border: none;
+  color: white;
+  margin: 1em;
+}
+#deposit-number {
+}
+#withdraw-number,
+#deposit-number {
+  margin: 1em;
+  padding: 1em;
+  border: none;
+}
