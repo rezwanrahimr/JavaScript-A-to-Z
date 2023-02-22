@@ -19,7 +19,29 @@ One parameter will come from you and the other parameter
 will be a default parameter. add these two parameters and return
 the result. */
 
-function defaultFun(one, two = 0) {
+/* function defaultFun(one, two = 0) {
   console.log(one + two);
 }
 defaultFun(1);
+ */
+
+/* 
+4.Write an arrow function where it will do the following:
+
+a. It will take an array where the array elements will be the
+name of your friends.
+
+b. Check if the length of each element is even, push elements
+with even length to a new array and return the result */
+
+/* function myFriends(friends) {
+  let evenFrd = [];
+  for (let friend of friends) {
+    if (friend.length % 2 == 0) {
+      evenFrd.push(friend);
+    }
+  }
+  return evenFrd;
+}
+console.log(myFriends(["rezwan", "rahim", "rupak", "hello"]));
+ */
