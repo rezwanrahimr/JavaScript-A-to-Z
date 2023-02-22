@@ -45,3 +45,20 @@ with even length to a new array and return the result */
 }
 console.log(myFriends(["rezwan", "rahim", "rupak", "hello"]));
  */
+
+/* 5. Write an arrow function where it will do the following:
+
+a. It will take two array inputs
+b. Combine the two arrays and assign them in a new array
+c. Find the maximum number from the new array and return the result. */
+
+function fun() {
+  let newArry = [];
+  let arrayOne = [34, 53, 23, 43, 55];
+  let arrayTwo = [22, 21, 14, 53, 34];
+  let all = arrayOne.concat(arrayTwo);
+  newArry.push(all);
+  let maximum = Math.max(...all);
+  return maximum;
+}
+console.log(fun());
