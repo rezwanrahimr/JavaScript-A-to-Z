@@ -1,8 +1,15 @@
 // object destuctring
-const myDetails = {
-  name: "Rezwan Rahim",
+/* const myDetails = {
+  namee: "Rezwan Rahim",
   roll: 31,
+  location: "hello ",
 };
 
-const { name, roll } = myDetails;
-console.log(name, roll);
+const { namee, ...a } = myDetails;
+console.log(a);
+
+const myObj = {
+  name: "hello world",
+};
+const { name } = myObj;
+console.log(name) */

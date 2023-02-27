@@ -51,7 +51,7 @@ console.log(myFriends(["rezwan", "rahim", "rupak", "hello"]));
 a. It will take two array inputs
 b. Combine the two arrays and assign them in a new array
 c. Find the maximum number from the new array and return the result. */
-
+/* 
 function fun() {
   let newArry = [];
   let arrayOne = [34, 53, 23, 43, 55];
@@ -62,3 +62,4 @@ function fun() {
   return maximum;
 }
 console.log(fun());
+ */
