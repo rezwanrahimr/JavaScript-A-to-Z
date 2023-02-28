@@ -43,8 +43,24 @@ console.log(newArr2);
 //3
 /* You have an array [1,9,17,22]. add the all elements of this
 array and given output. Do this usign for loop & array.reduce() method. */
-const array = [1, 9, 17, 22];
+/* const array = [1, 9, 17, 22];
 let newArr = array.reduce((pre, current, index, elements) => {
   return pre + current;
 });
-console.log(newArr);
+console.log(newArr); */
+
+//4
+/* practice problme ReadableStreamDefaultController() */
+
+// 5
+let data = {
+  location: [
+    {
+      latitude: "34.5 , 37.8",
+      longitude: "98.77, 58.7",
+      city: "Hyderabad",
+      country: "India",
+    },
+  ],
+};
+console.log(data.location[0].city);
