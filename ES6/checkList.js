@@ -103,3 +103,18 @@ const userOne = {
 };
 const { name, email, ...allD } = userOne;
 console.log("Name: ", name, "Email:", email, "Other Data:", allD);
+
+const newarr = [5, 6, 7];
+const [one, two, three] = newarr;
+console.log(three);
+
+//
+const my = {
+  name: "Rezwan Rahim",
+  roll: 31,
+  moreDetails: {
+    location: "Feni Town",
+    time: [1, 2, 3, 4, 5],
+  },
+};
+console.log(my?.moreDetails?.time);
