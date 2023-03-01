@@ -10,6 +10,7 @@ function allPost(data) {
   for (const datas of data) {
     const { id, title, body } = datas;
     let newElement = document.createElement("div");
+    newElement.classList.add("post");
     newElement.innerHTML = `
     <h2>${id}</h2>
     <h2>${title}</h2>

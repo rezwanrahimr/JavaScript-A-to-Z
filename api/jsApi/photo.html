@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+
+
+        }
+
+        button:hover {
+            background-color: red;
+            color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>All Photos</h1>
+    <div style="display: flex; justify-content: center;">
+        <button onclick="loadImage()">Show Image</button>
+    </div>
+    <section id="image-container">
+
+    </section>
+    <script src="./photo.js"></script>
+</body>
+
+</html>
