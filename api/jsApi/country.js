@@ -14,7 +14,7 @@ const showData = (data) => {
     newElement.innerHTML = `
     <h3>Name: ${name.common}</h3>
     <Img src='${flags.png}'></Img>
-    <h3>Name: ${capital[0]}</h3>
+    <h3>Capital: ${capital ? capital[0] : "No Capital"}</h3>
     `;
     countryContainer.appendChild(newElement);
   });
