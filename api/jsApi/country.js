@@ -30,7 +30,14 @@ const countryDetails = (countryCode) => {
 };
 
 const showCountryData = (singleCountry) => {
+  const detailsCountry = document.getElementById("single-country-details");
   const { name, capital } = singleCountry[0];
-  console.log(name, capital);
+  const newEle = document.createElement("div");
+  newEle.innerHTML = `
+  <h1>${name.common}</h1>
+  <h1>${capital[0]}</h1>
+  `;
+  detailsCountry.appendChild(newEle);
+  console.log(capital[0]);
 };
 country();
