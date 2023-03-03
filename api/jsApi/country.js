@@ -27,6 +27,8 @@ const countryDetails = (countryCode) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => showCountryData(data));
+  const detailsCountry = document.getElementById("single-country-details");
+  detailsCountry.innerHTML = "";
 };
 
 const showCountryData = (singleCountry) => {
@@ -34,7 +36,7 @@ const showCountryData = (singleCountry) => {
   const { name, capital } = singleCountry[0];
   const newEle = document.createElement("div");
   newEle.innerHTML = `
-  <h1>${name.common}</h1>
+  <h1 onload>${name.common}</h1>
   <h1>${capital[0]}</h1>
   `;
   detailsCountry.appendChild(newEle);
