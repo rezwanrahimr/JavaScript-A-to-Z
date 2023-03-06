@@ -5,22 +5,38 @@ async function loadComments() {
   displayComments(data);
 }
 
+// Load Post Data
+async function loadPost(id) {
+  const getElement = document.getElementById("postName");
+  getElement.innerHTML = "";
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const data = await res.json();
+
+  console.log(data.title);
+
+  getElement.innerHTML = `'${data.title}'`;
+}
 const displayComments = (data) => {
   const commantSection = document.getElementById("comments");
   data.slice(0, 20).map((comment) => {
-    const { postId, name, email, body } = comment;
+    const { id, name, email, body } = comment;
     const newElement = document.createElement("div");
+
     newElement.classList.add("comment");
     newElement.innerHTML = `
-    <h1>PostID: ${postId}</h1>
+    <h1>PostID: ${id}</h1>
+    <h2 id="postName"></h2>
     <h1>Name: ${name}</h1>
     <h1>Email: ${email}</h1>
     <p>Body: ${body}</p>
-    <button>See Post</button>
+
+    <button onClick="loadPost(${id})">See Post</button>
 
     `;
+
     commantSection.appendChild(newElement);
   });
   //   console.log(data);
 };
+
 loadComments();
