@@ -15,4 +15,6 @@ const myObject = {
     permanentLocation: "Feni Town",
   },
 };
+//2
+// console.log(`${myObject.skill[2]} and ${myObject.details()}`);
 // console.log(...myObject.skill);
