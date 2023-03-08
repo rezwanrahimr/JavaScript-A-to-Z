@@ -18,3 +18,13 @@ const myObject = {
 //2
 // console.log(`${myObject.skill[2]} and ${myObject.details()}`);
 // console.log(...myObject.skill);
+
+//3
+const num = (nu1, nu2) => {
+  if (nu1 + nu2 / 2 === 0) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+console.log(num(7, 5));
