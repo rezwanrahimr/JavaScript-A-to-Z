@@ -28,3 +28,13 @@ const num = (nu1, nu2) => {
   }
 };
 console.log(num(7, 5));
+
+//3.3
+const squareNum = (arr) => {
+  let square = arr[0];
+  arr.forEach((element) => {
+    square *= element;
+  });
+  console.log(square);
+};
+squareNum([3, 4, 5, 6, 7]);
