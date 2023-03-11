@@ -9,5 +9,15 @@ what can i do in this projects
 //
 document.getElementById("submit-btn").addEventListener("click", function () {
   const getName = document.getElementById("input-name").value;
-  console.log(getName);
+  const getValue = document.getElementById("input-value").value;
+  setLocalData(getName, getValue);
 });
+let data = {};
+const setLocalData = (key, value) => {
+  data[key] = value;
+  if (localStorage.getItem("cart")) {
+    localStorage.setItem("cart", JSON.stringify(data));
+  } else {
+    localStorage.setItem("cart", JSON.stringify(data));
+  }
+};
