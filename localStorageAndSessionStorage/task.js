@@ -18,5 +18,41 @@ getNumber(); */
 /* 
 cookies are small pices of data that store the user device or computer.commonly cookies are using  keep tracking
 the user performance,session information,  and other information thats user interaction on the web site.
+when user visit on the website,the website can send a cookies to the user browser. and which store the cookies
+on ther user computer or device. the next time user visit this website the website can access the cookies
+retrive the information of user performance and interaction data.
 
-*/
+
+
+
+//4. Write at least 3 dirrernces between local storage and session storage?
+//5. differences between cookies local storage and sessionstorage
+//6.what is event loop in javascript
+
+/*.......................
+ Level 2
+ ........................ */
+
+// problem 1
+
+document.getElementById("btn").addEventListener("click", function () {
+  //   let inputField = document.getElementById("input-value").value;
+  let getValue = localStorage.getItem("number");
+  document.getElementById("input-value").value = JSON.parse(getValue);
+
+  //
+  if (localStorage.getItem("number")) {
+    let getNum = localStorage.getItem("number");
+    let updateNumber = JSON.parse(getNum);
+    updateNumber++;
+    localStorage.setItem("number", JSON.stringify(updateNumber));
+  } else {
+    localStorage.setItem("number", "0");
+  }
+});
+
+const allTime = () => {
+  let getValue = localStorage.getItem("number");
+  document.getElementById("input-value").value = JSON.parse(getValue);
+};
+allTime();
