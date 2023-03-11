@@ -12,12 +12,34 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const getValue = document.getElementById("input-value").value;
   setLocalData(getName, getValue);
 });
+
 let data = {};
 const setLocalData = (key, value) => {
-  data[key] = value;
+  console.log(data);
+  let setData = localStorage.getItem("cart");
+  let parseData = JSON.parse(setData);
+
   if (localStorage.getItem("cart")) {
+    data = parseData;
+    data[key] = value;
     localStorage.setItem("cart", JSON.stringify(data));
   } else {
     localStorage.setItem("cart", JSON.stringify(data));
   }
 };
+
+const displayLocalStorageData = (key, value) => {
+  const showingData = document.getElementById("showing-data");
+  const createEle = document.createElement("li");
+  createEle.innerText = `key: ${key} value:${value}`;
+  showingData.appendChild(createEle);
+};
+function callData() {
+  const getData = localStorage.getItem("cart");
+  console.log(getData);
+  const jasonData = JSON.parse(getData);
+  for (let datas in jasonData) {
+    displayLocalStorageData(datas, jasonData[datas]);
+  }
+}
+callData();
