@@ -63,6 +63,10 @@ document.getElementById("name-send").addEventListener("click", function () {
   const userName = document.getElementById("user-name").value;
   setLocalStorage("name", userName);
 });
+//Delete Name
+document.getElementById("name-delete").addEventListener("click", function () {
+  deleteLocalStorage("name");
+});
 
 //set Eamil
 document.getElementById("email-send").addEventListener("click", function () {
@@ -70,7 +74,31 @@ document.getElementById("email-send").addEventListener("click", function () {
   setLocalStorage("eamil", userEamil);
 });
 
+//Delete Email
+document.getElementById("email-delete").addEventListener("click", function () {
+  deleteLocalStorage("eamil");
+});
+// Set Message
+document.getElementById("message-send").addEventListener("click", function () {
+  const userMessage = document.getElementById("user-message").value;
+  setLocalStorage("Message", userMessage);
+});
+//Delete Message
+document
+  .getElementById("message-delete")
+  .addEventListener("click", function () {
+    deleteLocalStorage("Message");
+  });
 //SET LOCAL STORAGE
 const setLocalStorage = (key, value) => {
   localStorage.setItem(`${key}`, `${value}`);
 };
+//DELETE LOCAL STORAGE
+const deleteLocalStorage = (keyName) => {
+  localStorage.removeItem(`${keyName}`);
+};
+
+// Reset
+document.getElementById("reset").addEventListener("click", function () {
+  localStorage.clear();
+});
