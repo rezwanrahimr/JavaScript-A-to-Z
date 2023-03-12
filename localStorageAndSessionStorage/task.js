@@ -91,6 +91,17 @@ document
   });
 //SET LOCAL STORAGE
 const setLocalStorage = (key, value) => {
+  let data = {};
+
+  if (localStorage.getItem("details")) {
+    const getData = localStorage.getItem("details");
+    data = JSON.parse(getData);
+    data[key] = value;
+    localStorage.setItem("details", JSON.stringify(data));
+  } else {
+    data[key] = value;
+    localStorage.setItem("details", JSON.stringify(data));
+  }
   localStorage.setItem(`${key}`, `${value}`);
 };
 //DELETE LOCAL STORAGE
