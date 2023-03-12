@@ -56,3 +56,21 @@ const allTime = () => {
   document.getElementById("input-value").value = JSON.parse(getValue);
 };
 allTime();
+
+// Level 3
+//set Name
+document.getElementById("name-send").addEventListener("click", function () {
+  const userName = document.getElementById("user-name").value;
+  setLocalStorage("name", userName);
+});
+
+//set Eamil
+document.getElementById("email-send").addEventListener("click", function () {
+  const userEamil = document.getElementById("user-email").value;
+  setLocalStorage("eamil", userEamil);
+});
+
+//SET LOCAL STORAGE
+const setLocalStorage = (key, value) => {
+  localStorage.setItem(`${key}`, `${value}`);
+};
